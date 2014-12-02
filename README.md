@@ -1,0 +1,4 @@
+stash
+=====
+
+docker stash
