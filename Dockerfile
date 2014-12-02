@@ -4,6 +4,9 @@ MAINTAINER Jean-Christophe Proulx <j.christophe@devjc.net>
 RUN yum -y install \
     vim-minimal \
     sudo \
+	&& yum -y update bash \
+    && rm -rf /var/cache/yum/* \
+    && yum clean all
 
 ADD install /data/install/
 
